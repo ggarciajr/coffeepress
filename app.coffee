@@ -25,6 +25,7 @@ app.configure "development", ->
 app.get "/", routes.index
 app.get "/post/new", routes.newPost
 app.post "/post/new", routes.addPost
+app.get "/post/:id", routes.viewPost
 app.get "/users", user.list
 http.createServer(app).listen app.get("port"), ->
   console.log "Express server listening on port " + app.get("port")
