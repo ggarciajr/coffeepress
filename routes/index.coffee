@@ -4,5 +4,6 @@
 # 
 exports.index = (req, res) ->
   res.render "index",
-    title: "Express"
+    title: "My CoffeePress Blog"
+    posts: []
 
