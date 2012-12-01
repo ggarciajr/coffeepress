@@ -1,4 +1,4 @@
-routes = require "../routes/index"
+routes = require "../routes"
 require "should"
 
 describe "routes", ->
